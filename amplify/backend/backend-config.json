@@ -1,0 +1,72 @@
+{
+  "api": {
+    "api4c961572": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "push"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "greet"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "greet": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "push": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_greet_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "greet"
+        }
+      ]
+    },
+    "AMPLIFY_function_greet_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "greet"
+        }
+      ]
+    },
+    "AMPLIFY_function_push_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "push"
+        }
+      ]
+    },
+    "AMPLIFY_function_push_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "push"
+        }
+      ]
+    }
+  }
+}

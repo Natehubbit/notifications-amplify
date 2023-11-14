@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/push": {
+      "name": "/push",
+      "lambdaFunction": "push",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/hello/{name}": {
+      "name": "/hello/{name}",
+      "lambdaFunction": "greet",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
