@@ -1,4 +1,5 @@
-![](https://github.com/Natehubbit/notifications-amplify/demo.gif)
+
+![](https://github.com/Natehubbit/notifications-amplify/blob/main/demo.gif)
 
 # install
 
